@@ -1,7 +1,11 @@
 "use client";
 import React from "react";
 import { Container } from "@/components/Container";
-import { Disclosure, DisclosureButton, DisclosurePanel } from "@headlessui/react";
+import {
+  Disclosure,
+  DisclosureButton,
+  DisclosurePanel,
+} from "@headlessui/react";
 import { ChevronUpIcon } from "@heroicons/react/24/solid";
 
 export const Faq = () => {
@@ -32,25 +36,25 @@ export const Faq = () => {
       </div>
     </Container>
   );
-}
+};
 
 const faqdata = [
   {
-    question: "Is this template completely free to use?",
-    answer: "Yes, this template is completely free to use.",
+    question: "Posso colocar a logo da minha empresa no relatório?",
+    answer: "Sim, em nosso relatório, a logo do cliente vai no cabeçalho.",
   },
   {
-    question: "Can I use it in a commercial project?",
-    answer: "Yes, this you can.",
-  },
-  {
-    question: "What is your refund policy? ",
+    question: "Existe uma limitação de usuários?",
     answer:
-      "If you're unhappy with your purchase for any reason, email us within 90 days and we'll refund you in full, no questions asked.",
+      "Não, existe um plano para a quantidade de funcionários que a empresa demandar.",
   },
   {
-    question: "Do you offer technical support? ",
+    question: "Quantos emails posso cadastrar para envio dos relatórios?",
     answer:
-      "No, we don't offer technical support for free downloads. Please purchase a support plan to get 6 months of support.",
+      "Nós disponibilizamos um limite máximo de 3 emails cadastrados para receber os relatórios.",
+  },
+  {
+    question: "Existe um limite de fotos no relatório?",
+    answer: "Não, o relatório comporta quantas fotos forem necessárias",
   },
 ];

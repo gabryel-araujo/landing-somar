@@ -4,8 +4,13 @@ import React from "react";
 import { Container } from "@/components/Container";
 
 export function Footer() {
-  const navigation = ["Product", "Features", "Pricing", "Company", "Blog"];
-  const legal = ["Terms", "Privacy", "Legal"];
+  const navigation = [
+    "Produto",
+    "Funcionalidades",
+    "Precificação",
+    "Sobre Nós",
+  ];
+  const legal = ["Termos", "Privacidade", "Legal"];
   return (
     <div className="relative">
       <Container>
@@ -15,23 +20,22 @@ export function Footer() {
               {" "}
               <Link
                 href="/"
-                className="flex items-center space-x-2 text-2xl font-medium text-indigo-500 dark:text-gray-100"
+                className="flex items-center space-x-2 text-2xl font-medium text-sky-500 dark:text-gray-100"
               >
                 <Image
-                  src="/img/logo.svg"
+                  src="/logoSomar.png"
                   alt="N"
                   width="32"
                   height="32"
                   className="w-8"
                 />
-                <span>Nextly</span>
+                <span>Somar Equipes</span>
               </Link>
             </div>
 
             <div className="max-w-md mt-4 text-gray-500 dark:text-gray-400">
-              Nextly is a free landing page & marketing website template for
-              startups and indie projects. Its built with Next.js & TailwindCSS.
-              And its completely open-source.
+              Somar Equipes é um SAAS utilizado para a gestão de equipes
+              externas e emissão de relatórios.
             </div>
 
             <div className="mt-5">
@@ -57,7 +61,7 @@ export function Footer() {
                 <Link
                   key={index}
                   href="/"
-                  className="w-full px-4 py-2 text-gray-500 rounded-md dark:text-gray-300 hover:text-indigo-500 focus:text-indigo-500 focus:bg-indigo-100 focus:outline-none dark:focus:bg-trueGray-700"
+                  className="w-full px-4 py-2 text-gray-500 rounded-md dark:text-gray-300 hover:text-sky-500 focus:text-sky-500 focus:bg-sky-100 focus:outline-none dark:focus:bg-trueGray-700"
                 >
                   {item}
                 </Link>
@@ -70,7 +74,7 @@ export function Footer() {
                 <Link
                   key={index}
                   href="/"
-                  className="w-full px-4 py-2 text-gray-500 rounded-md dark:text-gray-300 hover:text-indigo-500 focus:text-indigo-500 focus:bg-indigo-100 focus:outline-none dark:focus:bg-trueGray-700"
+                  className="w-full px-4 py-2 text-gray-500 rounded-md dark:text-gray-300 hover:text-sky-500 focus:text-sky-500 focus:bg-sky-100 focus:outline-none dark:focus:bg-trueGray-700"
                 >
                   {item}
                 </Link>
@@ -78,33 +82,21 @@ export function Footer() {
             </div>
           </div>
           <div className="">
-            <div>Follow us</div>
+            <div>Redes Sociais</div>
             <div className="flex mt-5 space-x-5 text-gray-400 dark:text-gray-500">
-              <a
-                href="https://twitter.com/web3templates"
-                target="_blank"
-                rel="noopener"
-              >
+              <a href="/" target="_blank" rel="noopener">
                 <span className="sr-only">Twitter</span>
                 <Twitter />
               </a>
-              <a
-                href="https://facebook.com/web3templates"
-                target="_blank"
-                rel="noopener"
-              >
+              <a href="/" target="_blank" rel="noopener">
                 <span className="sr-only">Facebook</span>
                 <Facebook />
               </a>
-              <a
-                href="https://instagram.com/web3templates"
-                target="_blank"
-                rel="noopener"
-              >
+              <a href="/" target="_blank" rel="noopener">
                 <span className="sr-only">Instagram</span>
                 <Instagram />
               </a>
-              <a href="https://linkedin.com/" target="_blank" rel="noopener">
+              <a href="/" target="_blank" rel="noopener">
                 <span className="sr-only">Linkedin</span>
                 <Linkedin />
               </a>
@@ -113,18 +105,18 @@ export function Footer() {
         </div>
 
         <div className="my-10 text-sm text-center text-gray-600 dark:text-gray-400">
-          Copyright © {new Date().getFullYear()}. Made with ♥ by{" "}
-          <a href="https://web3templates.com/" target="_blank" rel="noopener">
+          Copyright © {new Date().getFullYear()}. Gabryel Araújo
+          {/* <a href="https://web3templates.com/" target="_blank" rel="noopener">
             Web3Templates.
-          </a>{" "}
-          Illustrations from{" "}
+          </a>{" "} */}
+          {/* Illustrations from{" "}
           <a href="https://www.glazestock.com/" target="_blank" rel="noopener ">
             Glazestock
-          </a>
+          </a> */}
         </div>
       </Container>
       {/* Do not remove this */}
-      <Backlink />
+      {/* <Backlink /> */}
     </div>
   );
 }
