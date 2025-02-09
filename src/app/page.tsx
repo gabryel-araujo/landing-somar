@@ -14,7 +14,7 @@ export default function Home() {
       <Hero />
       <SectionTitle
         preTitle="Benefícios do Somar"
-        title="Por que você deveria nosso sistema?"
+        title="Por que você deveria usar nosso sistema?"
       >
         O Somar Equipes é um sistema totalmente baseado na nuvem, eliminando a
         necessidade de ocupar espaço no celular dos funcionários ou no
